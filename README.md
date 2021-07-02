@@ -12,7 +12,8 @@ podemos verificar se o [virtualenv] esta em nosso [PATH] digitando:
 virtualenv
 ```
 
-caso não encontre o comando [virtualenv], podemos adiconar ao [PATH] adicionando a seguinte linha no diretório `vim .bashrc` ou `vim .zshrc`:
+caso não encontre o comando [virtualenv], podemos adiconar ao [PATH] adicionando a seguinte linha no diretório,
+`vim .bashrc` ou `vim .zshrc`:
 ```bash
 export PATH="${PATH}:/home/substitua_pelo_nome_do_seu_usuário/.local/bin"
 ```
@@ -21,6 +22,7 @@ para criar uma [virtualenv], podemos simplismente digitar: `virtualenv e_um_nome
 ```bash
 virtualenv django
 ```
+
 para ativar a `virtualenv` [considerando que você esteja no diretório home e sua virtualenv tenha sido criada no mesmo diretório]:
 ```bash
 virtualenv django/bin/activate
