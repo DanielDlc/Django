@@ -15,7 +15,7 @@ virtualenv
 caso não encontre o comando [virtualenv], podemos adiconar ao [PATH] adicionando a seguinte linha no diretório,\
 `vim .bashrc`\
 ou\
-`vim .zshrc`:
+`vim .zshrc`
 ```bash
 export PATH="${PATH}:/home/substitua_pelo_nome_do_seu_usuário/.local/bin"
 ```
