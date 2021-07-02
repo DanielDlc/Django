@@ -13,7 +13,9 @@ virtualenv
 ```
 
 caso não encontre o comando [virtualenv], podemos adiconar ao [PATH] adicionando a seguinte linha no diretório,\
-`vim .bashrc` ou `vim .zshrc`:
+`vim .bashrc`\
+ou\
+`vim .zshrc`:
 ```bash
 export PATH="${PATH}:/home/substitua_pelo_nome_do_seu_usuário/.local/bin"
 ```
@@ -37,7 +39,7 @@ após ativar sua `virtualenv`, podemos acessar o diretório [django] e instalar 
 pip install django
 ```
 
-podemos confirmar se o [django] foi instalado corretamente! digitando,`python`ou `python3` no [shell] e após chamar o interpretador do python:
+podemos confirmar se o [django] foi instalado corretamente! digitando,`python` ou `python3` no [shell] e após chamar o interpretador do python:
 ```bash
 import django
 
