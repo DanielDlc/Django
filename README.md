@@ -25,7 +25,7 @@ virtualenv django
 
 para ativar a `virtualenv` [considerando que você esteja no diretório home e sua virtualenv tenha sido criada no mesmo diretório]:
 ```bash
-virtualenv django/bin/activate
+source virtualenv django/bin/activate
 ```
 para desativar a `virtualenv`:
 ```bash
