@@ -8,7 +8,7 @@ pip install virtualenv
 ```
 
 podemos verificar se o [virtualenv] esta em nosso [PATH] digitando:
-``bash
+```bash
 virtualenv
 ```
 
