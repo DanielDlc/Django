@@ -18,7 +18,7 @@ ou\
 `vim .zshrc`
 ```bash
 export PATH="${PATH}:/home/substitua_pelo_nome_do_seu_usuário/.local/bin"
-```\
+```
 
 
 para criar uma virtualenv, podemos simplismente digitar: `virtualenv` e_um_nome_de_uma_venv, no meu caso irei criar com nome `django`
@@ -33,7 +33,7 @@ source django/bin/activate
 para desativar a `virtualenv`:
 ```bash
 deactivate
-```\
+```
 
 
 ## Instalação do Django
