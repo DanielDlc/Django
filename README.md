@@ -1,5 +1,7 @@
 # Django
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/DanielDlc/Django/blob/main/LICENSE)
+
 ## Tutorial para instalação e configuração do Django usando Arch linux bspwm
 
 ### Inicialmente iremos instalar o virtualenv para a criação de “ambientes virtuais” utilizado em Python
