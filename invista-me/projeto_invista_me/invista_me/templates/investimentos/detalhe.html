@@ -1,36 +1,41 @@
-<h1>Detalhe do Investimento</h1>
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Investimento</th>
-    <th>Valor</th>
-    <th>Data</th>
-    <th>Pago</th>
-  </tr>
-  <tr>
-    <td>{{dados.id}}</td>
-    <td>{{dados.investimento}}</td>
-    <td>{{dados.valor}}</td>
-    <td>{{dados.data}}</td>
-    <td>{{dados.pago}}</td>
-  </tr>
-</table>
-
-
-<!-- <h1>Detalhe do Investimento</h1>
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Investimento</th>
-    <th>Valor</th>
-    <th>Data</th>
-    <th>Pago</th>
-  </tr>
-  <tr>
-    <td>{{dados.id}}</td>
-    <td>{{dados.investimento}}</td>
-    <td>{{dados.valor}}</td>
-    <td>{{dados.data}}</td>
-    <td>{{dados.pago}}</td>
-  </tr>
-</table> -->
+<!-- adicionando informações dentro de detalhes-->
+{% extends 'investimentos/base.html' %}
+<!---->
+{% block conteudo %}
+<!---->
+<! doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Detalhe</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Detalhe do Investimento</h1>
+    <div class="container">
+      <table class="table table-hover table-bordered">
+        <tr>
+          <th>Id</th>
+          <!-- CABEÇAÇHOS -->
+          <th>Investimento</th>
+          <th>Valor</th>
+          <th>Data</th>
+          <th>Pago</th>
+        </tr>
+        <tr>
+          <!-- DADOS -->
+          <td>{{ dados.id }}</td>
+          <td>{{ dados.investimento }}</td>
+          <td>{{ dados.valor }}</td>
+          <td>{{ dados.data }}</td>
+          <td>{{ dados.pago }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+{% endblock %}
