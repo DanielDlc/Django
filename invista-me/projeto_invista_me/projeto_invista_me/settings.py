@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from typing import DefaultDict, cast
-from decouple import config, Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET KEY")
+SECRET_KEY = "django-insecure-s@3j=byo%hl!s=m@=4!3_dgsbyk4pe)#6g%v#qb(os%z7wsop&"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", defaul=False, cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", Default=[], cast=Csv())
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "invista_me",
+    "widget_tweaks",
 ]
 
 MIDDLEWARE = [

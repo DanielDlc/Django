@@ -13,13 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from typing import Sized
+# from typing import Sized
 from django.contrib import admin
 from django.urls import path
 from invista_me import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.investimentos),
-    path("novo_investimento/", views.novo_investimento, name="novo_investimento"),
+    path("", views.investimentos, name="investimentos"),
+    path("novo_investimento/", views.criar, name="novo_investimento"),
+    path("novo_investimento/<int:id_investimento>", views.editar, name="editar"),
+    path("excluir_investimento/<int:id_investimento>", views.excluir, name="excluir"),
+    path("<int:id_investimento>", views.detalhe, name="detalhe"),
 ]
