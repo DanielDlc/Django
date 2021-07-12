@@ -9,7 +9,7 @@
 ## Como rodar o projeto?
 
 - Clone este repositório.
-- Crie uma virtualenv com Python 3
+- Crie uma ambiente virtual com Python 3
 - Instale as dependências.
 - Rode as migrações
 
