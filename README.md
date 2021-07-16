@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/DanielDlc/Django/blob/main/LICENSE)
 
 ## Sobre o projeto
-Conteúdo didatico para programadores iniciantes em django.\
+Conteúdo didático para programadores iniciantes em django.\
 O conteúdo abaixo, contém um pequeno tutorial com o guia de instalação do django e a configuração de uma virtualenv.\
 Nesse tutorial foi utilizado um SO Arch linux bspwm.
 
