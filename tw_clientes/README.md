@@ -24,3 +24,26 @@ Python manage.py startpp clientes
 ```bash
 Python manage.py runserver
 ```
+
+## Criando banco de dados
+
+No arquivo `Settings.py` precisamos modificar as configurações para mysql.\
+Abrindo o terminal, precisamos criar o banco de dados.
+
+```bash
+mysql -u root -p
+```
+
+após digitarmos a senha, iremos criar uma base de dados e verificar tabela:
+
+```bash
+create database tw_django_fundamentos;
+```
+
+```bash
+use tw_django_fundamentos;
+```
+
+```bash
+show tables;
+```
