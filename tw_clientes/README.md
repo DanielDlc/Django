@@ -27,6 +27,12 @@ Python manage.py runserver
 
 ## Criando banco de dados
 
+Autenticação
+
+```bash
+systemctl start mariadb
+```
+
 No arquivo `Settings.py` precisamos modificar as configurações para mysql.\
 Abrindo o terminal, precisamos criar o banco de dados.
 
