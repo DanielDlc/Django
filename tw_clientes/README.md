@@ -78,7 +78,7 @@ Criar tabelas no banco de dados
 | `django_migrations`             |     |     |
 | `django_session`                |     |     |
 
-## modificar arquivo models.py
+### modificar arquivo models.py
 
 Dentro do arquivo `models.py` iremos criar uma classe para utilizar orm do django.
 
@@ -122,3 +122,19 @@ Mostrar tabelas do banco de dados:
 ```bash
   desc clientes_cliente;
 ```
+
+### Views
+
+A camada View é responsável por tramitar as informações obtidas pelo model e exibi-las ao usuário (seja através de
+um template ou não)
+
+### urls
+
+As rotas são de fundamental importância para que o usuário consiga executar determinada funcionalidade do
+sistema. No Django, cada rota é responsável por executar um método na view da aplicação, que exibe alguma
+informação para o usuário.\
+No Django, o processamento de rotas acontece da seguinte forma:
+
+- 1 - Uma URL é invocada por meio do navegador;
+- 2 - O Django captura a URL, verifica o método que esta rota executa e repassa a requisição para ela;
+- 3 - A partir daí o restante da requisição é feita pelas outras camadas do Django.
