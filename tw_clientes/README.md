@@ -138,3 +138,57 @@ No Django, o processamento de rotas acontece da seguinte forma:
 - 1 - Uma URL é invocada por meio do navegador;
 - 2 - O Django captura a URL, verifica o método que esta rota executa e repassa a requisição para ela;
 - 3 - A partir daí o restante da requisição é feita pelas outras camadas do Django.
+
+### Templates
+
+- criar template e renderizar para o nosso banco de dados
+  criar um arquivo com nome: `clientes/lista_clientes.html`
+
+- criar uma tabela:
+
+| Lista de Clientes    |     |     |
+| :------------------- | :-- | :-- |
+| `Nome `              |     |     |
+| `Data de Nascimento` |     |     |
+| `Sexo`               |     |     |
+
+### Adicionando clientes direto no banco mysql
+
+```bash
+  systemctl start mariadb
+```
+
+```bash
+  mysql -u root -p
+```
+
+```bash
+  use tw_django_fundamentos;
+```
+
+```bash
+  desc clientes_cliente;
+```
+
+```bash
+  INSERT INTO clientes_cliente (nome, data_nascimento, email, sexo) VALUES ("João", '1990-01-01', "joao@gmail.com", "M")
+```
+
+- [listar clientes](http://127.0.0.1:8000/clientes/listar)
+
+- A rota listar, chama o método lista_clientes e o método obtem todos os clientes do banco de dados e salva na variável clientes.
+- Assim, ele retorna renderizando nosso html e envia a variável de cliente.
+- O template com essas informações, cria um for e vai iterar sobre a lista dos clientes do banco de dados.
+  Em resumo: começa chamando a rota, chamar a view, obtem dados no banco de dados, retornar esses dados para o template e renderizar todas as informações.
+
+- inserir mais um nome no banco de dados:
+
+```bash
+  INSERT INTO clientes_cliente (nome, data_nascimento, email, sexo) VALUES ("Maria", '1989-02-01', "maria@mail.com", "F");
+```
+
+- podemos visualizar:
+
+```bash
+  select * from clientes_cliente;
+```
