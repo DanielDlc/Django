@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TW Clientes</title>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>Sexo</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in clientes%}
+        <tr>
+          <td>{{i.nome}}</td>
+          <td>{{i.data_nascimento}}</td>
+          <td>{{i.sexo}}</td>
+        </tr>
+        {% endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>
