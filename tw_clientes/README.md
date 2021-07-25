@@ -192,3 +192,17 @@ No Django, o processamento de rotas acontece da seguinte forma:
 ```bash
   select * from clientes_cliente;
 ```
+
+### forms
+
+Dentro do diretório clientes, criar arquivo `forms.py`
+
+- importar forms e importar Cliente
+- criar uma classeModelForm
+  Dentro do diretório templates / clientes, criar um arquivo `form_cliente.html`
+
+ao criarmos um arquivo HTML, podemos utilizar apenas uma linha
+para criar um formulário `<body>{{ form.as_p }}</body`
+
+- Porém, nós iremos renderizar criando um formulário manualmente.
+  nome, sexo, data de nascimento, email e profissão.
