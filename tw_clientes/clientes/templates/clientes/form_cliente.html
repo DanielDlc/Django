@@ -7,29 +7,35 @@
     <title>Title</title>
   </head>
   <body>
-    <div>
-      <label>Nome:</label>
-      {{ form.nome }}
-    </div>
+    <form method="post">
+      {% csrf_token %}
+      <div>
+        <label>Nome:</label>
+        {{ form.nome }}
+      </div>
 
-    <div>
-      <label>Sexo:</label>
-      {{ form.sexo }}
-    </div>
+      <div>
+        <label>Sexo:</label>
+        {{ form.sexo }}
+      </div>
 
-    <div>
-      <label>Data de Nascimento:</label>
-      {{ form.data_nascimento }}
-    </div>
+      <div>
+        <label>Data de Nascimento:</label>
+        {{ form.data_nascimento }}
+      </div>
 
-    <div>
-      <label>Email:</label>
-      {{ form.email }}
-    </div>
+      <div>
+        <label>Email:</label>
+        {{ form.email }}
+      </div>
 
-    <div>
-      <label>Profissão:</label>
-      {{ form.profissao }}
-    </div>
+      <div>
+        <label>Profissão:</label>
+        {{ form.profissao }}
+      </div>
+      <div>
+        <input type="submit" name="cadastrar" />
+      </div>
+    </form>
   </body>
 </html>
