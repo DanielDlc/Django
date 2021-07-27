@@ -206,3 +206,5 @@ para criar um formulário `<body>{{ form.as_p }}</body`
 
 - Porém, nós iremos renderizar criando um formulário manualmente.
   nome, sexo, data de nascimento, email e profissão.
+
+- criar a tag form e um csrf_token, uma nova div para submeter as informações do formulário no arquivo `form_cliente.html`
