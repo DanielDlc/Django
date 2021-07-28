@@ -10,26 +10,31 @@
     <form method="post">
       {% csrf_token %}
       <div>
+        {{ form.nome.erros }}
         <label>Nome:</label>
         {{ form.nome }}
       </div>
 
       <div>
+        {{ form.sexo.erros }}
         <label>Sexo:</label>
         {{ form.sexo }}
       </div>
 
       <div>
+        {{ form.data_nascimento.erros }}
         <label>Data de Nascimento:</label>
         {{ form.data_nascimento }}
       </div>
 
       <div>
+        {{ form.email.erros }}
         <label>Email:</label>
         {{ form.email }}
       </div>
 
       <div>
+        {{ form.profissao.erros }}
         <label>Profissão:</label>
         {{ form.profissao }}
       </div>
