@@ -208,3 +208,8 @@ para criar um formulário `<body>{{ form.as_p }}</body`
   nome, sexo, data de nascimento, email e profissão.
 
 - criar a tag form e um csrf_token, uma nova div para submeter as informações do formulário no arquivo `form_cliente.html`
+
+### bootstrap
+
+- criando href dentro do arquivo `lista_clientes.html` adicionar href com bootstrapcdn
+- Dentro da tag body, adicionar uma nova classe dentro de table `class="table"`
