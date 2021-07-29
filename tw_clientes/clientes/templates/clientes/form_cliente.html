@@ -5,42 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <form method="post">
-      {% csrf_token %}
-      <div>
-        {{ form.nome.erros }}
-        <label>Nome:</label>
-        {{ form.nome }}
-      </div>
+    <main class="container">
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          {{ form.nome.erros }}
+          <label>Nome:</label>
+          {{ form.nome }}
+        </div>
 
-      <div>
-        {{ form.sexo.erros }}
-        <label>Sexo:</label>
-        {{ form.sexo }}
-      </div>
+        <div class="form-group">
+          {{ form.sexo.erros }}
+          <label>Sexo:</label>
+          {{ form.sexo }}
+        </div>
 
-      <div>
-        {{ form.data_nascimento.erros }}
-        <label>Data de Nascimento:</label>
-        {{ form.data_nascimento }}
-      </div>
+        <div class="form-group">
+          {{ form.data_nascimento.erros }}
+          <label>Data de Nascimento:</label>
+          {{ form.data_nascimento }}
+        </div>
 
-      <div>
-        {{ form.email.erros }}
-        <label>Email:</label>
-        {{ form.email }}
-      </div>
+        <div class="form-group">
+          {{ form.email.erros }}
+          <label>Email:</label>
+          {{ form.email }}
+        </div>
 
-      <div>
-        {{ form.profissao.erros }}
-        <label>Profissão:</label>
-        {{ form.profissao }}
-      </div>
-      <div>
-        <input type="submit" name="cadastrar" />
-      </div>
-    </form>
+        <div class="form-group">
+          {{ form.profissao.erros }}
+          <label>Profissão:</label>
+          {{ form.profissao }}
+        </div>
+
+        <div class="form-group">
+          <input type="submit" name="cadastrar" />
+        </div>
+      </form>
+    </main>
   </body>
 </html>
