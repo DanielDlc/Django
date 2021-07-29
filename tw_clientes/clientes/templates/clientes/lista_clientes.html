@@ -1,37 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TW Clientes</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    />
-  </head>
-
-  <body>
-    <main class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Data de Nascimento</th>
-            <th>Sexo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for i in clientes %}
-          <tr>
-            <td>{{i.nome}}</td>
-            <td>{{i.data_nascimento}}</td>
-            <td>{{i.sexo}}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      <a href="{% url 'cadastrar_cliente' %}"> <button class="btn btn-primary">Cadastrar</button><a/>
-    </main>
-  </body>
-</html>
+{% extends 'clientes/base.html' %} {% block titulo %} Listagem de clientes
+{%endblock titulo%} {% block conteudo %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data de Nascimento</th>
+      <th>Sexo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in clientes %}
+    <tr>
+      <td>{{i.nome}}</td>
+      <td>{{i.data_nascimento}}</td>
+      <td>{{i.sexo}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<a href="{% url 'cadastrar_cliente' %}"
+  ><button class="btn btn-primary">Cadastrar</button></a
+>
+{% endblock conteudo%}
