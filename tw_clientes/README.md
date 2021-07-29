@@ -212,4 +212,12 @@ para criar um formulário `<body>{{ form.as_p }}</body`
 ### bootstrap
 
 - criando href dentro do arquivo `lista_clientes.html` adicionar href com bootstrapcdn
-- Dentro da tag body, adicionar uma nova classe dentro de table `class="table"`
+- Dentro da tag body, incluir uma nova classe table `class="table"`
+- criando button com classe btn, redirecionando para rota de cadastrar cliente dentro de `urls.py`
+- criando também href dentro do arquivo `form_clientes.html` adicionar href com bootstrapcdn
+
+### base Templates
+
+- criando um arquivo `base.html` com as informações dos arquivo `lista_clientes.html` e `form_clientes.html`
+- cirando arquivos estáticos. criar diretórios dentro de `clientes` e criar `static / clientes / css` criar um arquivo `style.css`
+- dentro do arquivo `base.html` incluir `href="{% {% static 'clientes/css/style.css' %} %`
