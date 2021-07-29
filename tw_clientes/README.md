@@ -221,3 +221,22 @@ para criar um formulário `<body>{{ form.as_p }}</body`
 - criando um arquivo `base.html` com as informações dos arquivo `lista_clientes.html` e `form_clientes.html`
 - cirando arquivos estáticos. criar diretórios dentro de `clientes` e criar `static / clientes / css` criar um arquivo `style.css`
 - dentro do arquivo `base.html` incluir `href="{% {% static 'clientes/css/style.css' %} %`
+
+### Filtros
+
+- dentro do diretório `clientes` criar diretório e `templatetags / meusfiltros.py `
+  adicionar Filtros
+
+```bash
+from django import template
+
+register = template.Library()
+
+
+@register.filter(name='addclass')
+def addclass(value, arg):
+    return value.as_widget(attrs={'class': arg})
+```
+
+- tradução da informação
+  dentro do arquivo `settings.py` modifidcar: LANGUAGE_CODE = 'pt-br' e TIME_ZONE = 'America/Sao_Paulo'
