@@ -240,3 +240,26 @@ def addclass(value, arg):
 
 - tradução da informação
   dentro do arquivo `settings.py` modifidcar: LANGUAGE_CODE = 'pt-br' e TIME_ZONE = 'America/Sao_Paulo'
+
+### Buscar Cliente por id
+
+- buscar na nossa tabela de cliente o id e renderizando um template
+  adicionar uma função id dentro do arquivo `views.py`e adiconar um path dentro de `urls.py`
+
+- criar template dentro do diretório `template/clientes` com nome `lista_cliente`
+
+```bash
+{% extends 'clientes/base.html' %} {% block titulo %} Listagem de cliente {%
+endblock titulo %} {% block conteudo %}
+<div class="card">
+  <div class="card-header">Dados do cliente</div>
+
+  <div>
+    <h5 class="card-title">Nome: {{cliente.nome}}</h5>
+    <h5 class="card-title">Sexo: {{cliente.sexo}}</h5>
+    <h5 class="card-title">Data de Nascimento: {{cliente.data_nascimento}}</h5>
+    <h5 class="card-title">Email: {{cliente.email}}</h5>
+    <h5 class="card-title">Prof: {{}}</h5>
+  </div>
+</div>
+```
