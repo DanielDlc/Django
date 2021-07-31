@@ -239,7 +239,7 @@ def addclass(value, arg):
 ```
 
 - tradução da informação
-  dentro do arquivo `settings.py` modifidcar: LANGUAGE_CODE = 'pt-br' e TIME_ZONE = 'America/Sao_Paulo'
+  dentro do arquivo `settings.py` modificar: LANGUAGE_CODE = 'pt-br' e TIME_ZONE = 'America/Sao_Paulo'
 
 ### Buscar Cliente por id
 
@@ -250,7 +250,7 @@ def addclass(value, arg):
 
 ```bash
 {% extends 'clientes/base.html' %} {% block titulo %} Listagem de cliente {%
-endblock titulo %} {% block conteudo %}
+endblock titulo %} {% block conteúdo %}
 <div class="card">
   <div class="card-header">Dados do cliente</div>
 
@@ -263,3 +263,9 @@ endblock titulo %} {% block conteudo %}
   </div>
 </div>
 ```
+
+### editar cliente
+
+- criar uma função no arquivo `vies.py` para editar o cliente
+- criar uma rota no arquivo `urls.py` e passar o id do cliente
+- criar um novo item com nome de Ações e um link para editar e remover dentro do arquivo `lista_clientes.html`
