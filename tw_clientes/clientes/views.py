@@ -37,3 +37,11 @@ def editar_cliente(request, id):
         form.save()
         return redirect('listar_clientes')
     return render(request, 'clientes/form_cliente.html', {'form': form})
+
+
+def remover_cliente(request, id):
+    cliente = Cliente.objects.get(id=id)
+    if request.method == "POST":
+        cliente.delete()
+        return redirect('listar_clientes')
+    return render(request, 'clientes/confirma_exclusao.html', {'cliente': cliente})
