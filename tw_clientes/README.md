@@ -266,6 +266,13 @@ endblock titulo %} {% block conteúdo %}
 
 ### editar cliente
 
-- criar uma função no arquivo `vies.py` para editar o cliente
+- criar uma função no arquivo `views.py` para editar o cliente
 - criar uma rota no arquivo `urls.py` e passar o id do cliente
 - criar um novo item com nome de Ações e um link para editar e remover dentro do arquivo `lista_clientes.html`
+  editar
+
+### excluir cliente
+
+- criar uma função dentro do diretório `views.py` remover_cliente
+- criar um template com nome `confirma_exclusao.html` dentro do diretório `templates/clientes`
+- criar uma rota responsável para remover dentro do diretório `urls.py` e uma href responsável pela rota remover_cliente dentro do arquivo `lista_clientes.html`
