@@ -275,4 +275,15 @@ endblock titulo %} {% block conteúdo %}
 
 - criar uma função dentro do diretório `views.py` remover_cliente
 - criar um template com nome `confirma_exclusao.html` dentro do diretório `templates/clientes`
-- criar uma rota responsável para remover dentro do diretório `urls.py` e uma href responsável pela rota remover_cliente dentro do arquivo `lista_clientes.html`
+- criar uma rota responsável para remover dentro do diretório `urls.py` e uma href responsável pela rota remover_cliente dentro do arquivo `lista_clientes.html`.
+
+### criando camada serviços
+
+- criação de camada e removendo a responsabilidade das views.
+  dentro do diretório `clientes` criar um diretório `entidades`e um arquivo `cliente.py`.
+- assim teremos uma classe cliente com seu construtor contento nomes: nome, sexo, data_nascimento, email e profissao.
+- dentro do arquivo `views.py` remover form.save e criar um novo objeto do tipo cliente com base nos dados vindo do formulário.
+- criar serviço para comportar os métodos do crud do cliente:
+  mais uma vez, dentro do diretório `clientes` criar novo diretório `services` e um arquivo `cliente_service.py`.
+  dentro do `cliente_service.py` importar: from ..models import Cliente e detro do diretório `views.py` importar: from .services import cliente_service.
+- todo locar que estivermos utilizando orm do django Cliente.objects.all() iremos chamar clientes = cliente_service listar_clientes()
