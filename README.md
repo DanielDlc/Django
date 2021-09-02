@@ -2,6 +2,9 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/DanielDlc/Django/blob/main/LICENSE)
 
+## Projeto invista-me
+https://livrosinvista-me.herokuapp.com/
+
 ## Sobre o projeto
 Conteúdo didático para programadores iniciantes em django.\
 O conteúdo abaixo, contém um pequeno tutorial com o guia de instalação do django e a configuração de uma virtualenv.\
