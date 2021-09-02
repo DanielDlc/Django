@@ -3,7 +3,7 @@
 ## Sobre o projeto
 
 Conteúdo didático para programadores iniciantes em django.\
-este é um projeto de fundamentos, com ele iremos criar um crud de clientes.
+este projeto foi utilizado para criar templates em aplicações django.
 
 ## Criando um projeto com nome django_templates
 
