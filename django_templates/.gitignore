@@ -7,6 +7,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+*.pyo
+*.db
+*.pot
+*.doctree
+*.swp
 
 # C extensions
 *.so
