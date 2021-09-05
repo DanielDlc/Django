@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -5,7 +6,7 @@ from django.shortcuts import render
 
 def index(request):
     nome_da_empresa = "DLC Tecnologia"
-    descricao_da_emrpesa = "Empresa atualizada em novas tecnologias com mais de 2 anos de experiência em desenvolvimento de software para pequenas e médias empresas, "\
+    descricao_da_empresa = "Empresa atualizada em novas tecnologias com mais de 2 anos de experiência em desenvolvimento de software para pequenas e médias empresas, "\
         "incluindo criação de Sites, Portfólio, Manutenção de computadores e remoção de malwares. "\
         "Com vasto conhecimento em: Engenharia da Computação, Microservices, Serverless, Design System e outras práticas."
     contato_empresa = {
@@ -13,4 +14,12 @@ def index(request):
         "telefone": "21-999183939",
         "email": "dlc.engcomputacao@gmail.com"
     }
-    return render(request, 'empresa/index.html', {'nome_empresa': nome_da_empresa, 'descricao_empresa': descricao_da_emrpesa, 'contato_empresa': contato_empresa})
+    return render(request, 'empresa/index.html', {'nome_empresa': nome_da_empresa, 'descricao_empresa': descricao_da_empresa, 'contato_empresa': contato_empresa})
+
+
+def about(request):
+    return HttpResponse("Página sobre")
+
+
+def contact(request, id):
+    return HttpResponse(id)
