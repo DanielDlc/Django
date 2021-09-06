@@ -113,6 +113,7 @@
       <!-- /.row -->
 
       <div class="row">
+        {% for curso_id, curso in cursos_home.items %}
         <div class="col-md-4 mb-5">
           <div class="card h-100">
             <img
@@ -121,56 +122,17 @@
               alt=""
             />
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente esse necessitatibus neque sequi doloribus.
-              </p>
+              <h4 class="card-title">{{ curso_id }} - {{ curso.titulo }}</h4>
+              <p class="card-text">{{ curso.descricao }}</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-5">
-          <div class="card h-100">
-            <img
-              class="card-img-top"
-              src="http://placehold.it/300x200"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente esse necessitatibus neque sequi doloribus totam ut
-                praesentium aut.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <div class="card h-100">
-            <img
-              class="card-img-top"
-              src="http://placehold.it/300x200"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente esse necessitatibus neque.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
+        {% empty %}
+        <h3>Novos projetos serão lançados em breve</h3>
+        {% endfor %}
       </div>
       <!-- /.row -->
     </div>
