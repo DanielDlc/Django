@@ -26,8 +26,8 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("Página sobre")
+    return render(request, 'empresa/about.html')
 
 
 def contact(request, id):
-    return HttpResponse(id)
+    return render(request, 'empresa/contact.html')
