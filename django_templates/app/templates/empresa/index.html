@@ -122,7 +122,11 @@
               alt=""
             />
             <div class="card-body">
+              {% ifequal curso.titulo "Shell Script" %}
+              <h2 class="card-title">{{ curso_id }} - {{ curso.titulo }}</h2>
+              {% else %}
               <h4 class="card-title">{{ curso_id }} - {{ curso.titulo }}</h4>
+              {% endifequal %}
               <p class="card-text">{{ curso.descricao }}</p>
             </div>
             <div class="card-footer">

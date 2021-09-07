@@ -16,9 +16,9 @@ def index(request):
     }
 
     cursos_home = {
-        "1": {"titulo": "Django ", "descricao": "Aprenda todo posicionamento no Google.!!"},
-        "2": {"titulo": "Flask ", "descricao": "Aprenda toda a base do FFlask Agora mesmo!!"},
-        "3": {"titulo": "Estrutura de dados", "descricao": "Aprenda Estrutura de dados Agora mesmo!!"}
+        "1": {"titulo": "Shell Script", "descricao": "Introdução à programação com a linguagem Shell Script!!"},
+        "2": {"titulo": "Python", "descricao": "DEsse curso ensina os primeiros passos para se tornar um programador Python!!"},
+        "3": {"titulo": "C++ Estrutura de dados", "descricao": "Aprenda Estrutura de dados e crie aplicações rápidas!!"}
     }
 
     return render(request, 'empresa/index.html', {'nome_empresa': nome_da_empresa, 'descricao_empresa': descricao_da_empresa,
