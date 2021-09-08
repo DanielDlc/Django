@@ -29,5 +29,5 @@ def about(request):
     return render(request, 'empresa/about.html')
 
 
-def contact(request, id):
+def contact(request):
     return render(request, 'empresa/contact.html')
