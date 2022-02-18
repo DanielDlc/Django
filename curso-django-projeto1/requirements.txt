@@ -7,3 +7,4 @@ pycodestyle==2.8.0
 pyflakes==2.4.0
 sqlparse==0.4.2
 toml==0.10.2
+Faker==13.0.0
