@@ -18,7 +18,7 @@ ativando virtualenv no windows:
 
 ### Django
 
-instalando django 3 (observe sua virtualenv se está ativada)
+instalando django 3 (observe se sua virtualenv está ativada!)
 
 ```bash
 pip install "Django==3.0.*"
@@ -38,6 +38,6 @@ python manage.py migrate
 
 testar o projeto:
 
-````bash
+```bash
 python manage.py runserver
 ```
